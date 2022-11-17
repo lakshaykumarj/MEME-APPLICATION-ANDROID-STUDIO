@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="90dp"
+        android:paddingBottom="50dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Yearlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/yeartext"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:hint="Enter Topic"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/program"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
+
+            <Button
+                android:id="@+id/BACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:text="SUBMIT" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
